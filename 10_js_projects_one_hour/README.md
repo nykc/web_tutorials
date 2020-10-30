@@ -29,11 +29,11 @@
 - popup with text
 - close btn popup with click event
 
-5. Purple Heart Rain
+5. Raining Playing Card Suits
 
-- heart css
+- Hearts, Clubs, Diamonds, Spades css
 - falling animation
-- create heart
+- create suits
 - add class
 - add it to body
 - interval
