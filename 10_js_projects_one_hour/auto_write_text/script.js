@@ -1,4 +1,4 @@
-const text = 'Buy the dip, sell the rip...';
+const text = 'Buy the dip, sell the rip... STONKS!!!';
 
 let index = 0;
 
