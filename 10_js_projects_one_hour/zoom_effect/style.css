@@ -5,10 +5,25 @@
 }
 
 body {
+    background-color: navy;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
     margin: 0;
     min-height: 100vh;
+}
+
+#container {
+    overflow: hidden;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    width: 500px;
+    height: 500px;
+}
+
+img {
+    transform-origin: center center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
