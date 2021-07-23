@@ -1,0 +1,17 @@
+.main-header {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.logo {
+  width: 25%;
+  min-width: 10rem;
+  max-width: 15rem;
+}
+
+.main-nav {
+  display: none;
+}

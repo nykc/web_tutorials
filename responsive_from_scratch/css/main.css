@@ -340,4 +340,55 @@ template {
   display: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+}
+
+.main-header {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.logo {
+  width: 25%;
+  min-width: 10rem;
+  max-width: 15rem;
+}
+
+.main-nav {
+  display: none;
+}
+
+.hero {
+  background: linear-gradient(to right, #048ca8, #16db93);
+  color: white;
+  padding-top: 10em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.hero-img {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
