@@ -361,6 +361,12 @@ img {
   margin: 0 auto;
 }
 
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -424,10 +430,6 @@ h2 {
   max-width: 15rem;
 }
 
-.main-nav {
-  display: none;
-}
-
 .hero {
   background: linear-gradient(to right, #048ca8, #16db93);
   color: white;
@@ -437,6 +439,10 @@ h2 {
 }
 
 .hero-img {
+  display: none;
+}
+
+.main-nav {
   display: none;
 }
 
