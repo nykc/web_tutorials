@@ -418,18 +418,18 @@ h2 {
 }
 
 .main-nav {
-  background-color: #d31869;
+  background: #d31869;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 100%;
   font-size: 1.2rem;
-  display: none;
+  overflow: hidden;
+  transition: all ease-in-out 250ms;
 }
 .main-nav ul {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: space-around;
   height: 100vh;
 }
@@ -437,12 +437,56 @@ h2 {
   flex: 1 1 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .main-nav a {
   color: white;
   text-decoration: none;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.main-nav.is-open {
+  left: 0;
+}
+
+.nav-toggle {
+  display: block;
+  padding: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 3px;
+  background: white;
+  transition: all ease-in-out 250ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.hamburger.is-open {
+  transform: rotate(45deg);
+}
+.hamburger.is-open::after {
+  transform: rotate(-90deg) translateX(3px);
+}
+.hamburger.is-open::before {
+  opacity: 0;
 }
 
 .main-header {
