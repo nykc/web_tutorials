@@ -368,6 +368,16 @@ img {
   list-style: none;
 }
 
+.lg-screen {
+  display: none;
+}
+
+.bg-primary {
+  background: #048ca8;
+  color: white;
+  padding: 5em 2.5em;
+}
+
 h1,
 h2,
 h3,
@@ -393,6 +403,7 @@ h1 {
   font-weight: 300;
   line-height: 1.15;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -412,6 +423,28 @@ h2 {
 
 .text-intro {
   font-size: 1.2rem;
+}
+
+.title-box {
+  background: #d31869;
+  color: white;
+  margin: 0 auto;
+  padding: 1em;
+  transform: translateY(30%);
+  max-width: 90%;
+}
+@media (min-width: 495px) {
+  .title-box {
+    transform: translateY(50%);
+  }
+}
+.title-box + .bg-primary {
+  padding-top: 6em;
+}
+@media (min-width: 495px) {
+  .title-box + .bg-primary {
+    padding-top: 8em;
+  }
 }
 
 .grid {
@@ -521,12 +554,8 @@ h2 {
   text-align: center;
 }
 
-.hero-img {
-  display: none;
-}
-
 .sales-points {
-  padding: 10vh 0;
+  padding: 10vh 0 0;
 }
 
 .sales-point {
