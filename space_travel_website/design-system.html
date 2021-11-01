@@ -100,7 +100,15 @@
             <h2 class="numbered-title"><span>03</span> Interactive Elements</h2>
 
             <!-- navigation -->
-            <div></div>
+            <div>
+                <nav>
+                    <ul class="primary-navigation underline-indicators flex">
+                        <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span> Active</a></li>
+                        <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span> Hovered</a></li>
+                        <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span> Idle</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <div class="flex">
                 <div style="margin-top: 5rem;">
@@ -109,12 +117,27 @@
 
                 </div>
                 
-                <div style="margin-bottom: 50vh;">
+                <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem;">
                     <!-- tabs -->
+                    <div class="tab-list underline-indicators flex">
+                        <button aria-selected="true" class="uppercase ff-sans-contab-list underline-indicators flexd text-accent bg-dark letter-spacing-2">Moon</button>
+                        <button aria-selected="false" class="uppercase ff-sans-contab-list underline-indicators flexd text-accent bg-dark letter-spacing-2">Mars</button>
+                        <button aria-selected="false" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa</button>
+                    </div>
 
                     <!-- dots -->
+                    <div class="dot-indicators flex">
+                        <button aria-selected="true" class=""><span class="sr-only">slide title</span></button>
+                        <button aria-selected="false" class=""><span class="sr-only">slide title</span></button>
+                        <button aria-selected="false" class=""><span class="sr-only">slide title</span></button>
+                    </div>
 
                     <!-- numbers -->
+                    <div class="number-indicators">
+                        <button aria-selected="true" class="">1</button>
+                        <button aria-selected="false" class="">2</button>
+                        <button aria-selected="false" class="">3</button>
+                    </div>
 
                 </div>
             </div>
