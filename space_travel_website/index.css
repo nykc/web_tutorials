@@ -81,6 +81,7 @@ body {
 
   display: grid;
   grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
 }
 
 img,
@@ -322,6 +323,10 @@ select {
   /* backdrop-filter: blur(1.5rem); */
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 @supports (backdrop-filter: blur(1rem)) {
   .primary-navigation {
     background: hsl(var(--clr-white) / 0.05);
@@ -339,6 +344,36 @@ select {
     padding: min(20rem, 15vh) 2rem;
     margin: 0;
     flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    background-image: url(./assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(./assets/shared/icon-close.svg);
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
   }
 
   .primary-navigation.underline-indicators > .active {
